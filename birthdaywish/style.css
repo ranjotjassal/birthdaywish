@@ -88,6 +88,7 @@ body {
 .birthday-button__button {
   width: 240px;
   height: 100px;
+  margin-top: 30px;
   position: relative;
   border: 0;
   background: var(--icing);

@@ -241,6 +241,11 @@ add(LIGHTS_OUT(), 'LIGHTS_OUT');
 SOUNDS.TUNE.onended = SOUNDS.MATCH.onended = () => MASTER_TL.play();
 MASTER_TL.addPause('FLAME_ON', () => SOUNDS.MATCH.play());
 MASTER_TL.addPause('LIGHTS_OUT', () => SOUNDS.TUNE.play());
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   BTN.setAttribute('disabled', true);
+//   MASTER_TL.restart();
+// });
 BTN.addEventListener('click', () => {
   BTN.setAttribute('disabled', true);
   MASTER_TL.restart();
